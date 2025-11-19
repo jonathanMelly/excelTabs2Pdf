@@ -66,7 +66,7 @@ namespace ExcelToPdfExporter
                 workbook = excelApp.Workbooks.Open(filePath, ReadOnly: true);
 
                 int index = 1;
-                foreach (Excel.Worksheet worksheet in workbook.Worksheets.AsParallel())
+                foreach (Excel.Worksheet worksheet in workbook.Worksheets)
                 {
                     bool isVisible = worksheet.Visible == Excel.XlSheetVisibility.xlSheetVisible;
                     sheets.Add(new SheetInfo(worksheet.Name, index, isVisible));
@@ -131,7 +131,7 @@ namespace ExcelToPdfExporter
             int totalSheets = sheets.Count;
             int currentSheet = 0;
 
-            foreach (var sheetInfo in sheets.AsParallel())
+            foreach (var sheetInfo in sheets)
             {
                 try
                 {
