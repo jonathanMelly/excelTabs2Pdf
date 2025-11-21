@@ -207,9 +207,9 @@ namespace ExcelToPdfExporter
             // 
             // btnDeselectAll
             // 
-            btnDeselectAll.Location = new System.Drawing.Point(118, 165);
+            btnDeselectAll.Location = new System.Drawing.Point(135, 165);
             btnDeselectAll.Name = "btnDeselectAll";
-            btnDeselectAll.Size = new System.Drawing.Size(100, 27);
+            btnDeselectAll.Size = new System.Drawing.Size(134, 27);
             btnDeselectAll.TabIndex = 3;
             btnDeselectAll.Text = "Tout désélectionner";
             btnDeselectAll.UseVisualStyleBackColor = true;
@@ -219,7 +219,7 @@ namespace ExcelToPdfExporter
             // 
             btnSelectAll.Location = new System.Drawing.Point(12, 165);
             btnSelectAll.Name = "btnSelectAll";
-            btnSelectAll.Size = new System.Drawing.Size(100, 27);
+            btnSelectAll.Size = new System.Drawing.Size(105, 27);
             btnSelectAll.TabIndex = 2;
             btnSelectAll.Text = "Tout sélectionner";
             btnSelectAll.UseVisualStyleBackColor = true;
